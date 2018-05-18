@@ -11,7 +11,7 @@ Time spent: **14** hours spent in total
     - Vulnerability types: enumeration, mapping, fingerprinting
     - Tested in version: 4.2
     - Fixed in version: 4.8.1
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://github.com/LunchBox1/Week-7/blob/master/Version%20Enumeration.gif
   - [ ] Steps to recreate:go to http://wpdistillery.vm/readme.htm
   - [ ] Affected source code: none
 2. (Required) Login Enumeraton
@@ -19,7 +19,7 @@ Time spent: **14** hours spent in total
     - Vulnerability types: enumeration
     - Tested in version: 4.2
     - Fixed in version: unknown 
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://github.com/LunchBox1/Week-7/blob/master/Login%20Enumeration.gif
   - [ ] Steps to recreate: Loggin to the admin account using a wring password. A response will return that a wrong password was entered for the admin account. 
   - [ ] Affected source code: none
 3. (Required) Authenticated Stored XSS via Imange Filename
@@ -27,7 +27,7 @@ Time spent: **14** hours spent in total
     - Vulnerability types: XXS
     - Tested in version: 4.2
     - Fixed in version: 4.2.10
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://github.com/LunchBox1/Week-7/blob/master/Authenticated%20Stored%20XSS%20via%20Image%20Filename.gif
   - [ ] Steps to recreate: Change the image name to include the 'cengizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg' script. Then, upload the image as an attachment in a comment. In order for the exploit work, that admin has to approve the comment. After the admin approves the comment, it becomes visible to rest of the users. When the image is clicked on, the XSS script executes. 
   - [ ] Affected source code: none
 4. (Optional) Host Header Injection in Password Reset
@@ -35,7 +35,7 @@ Time spent: **14** hours spent in total
     - Vulnerability types: CSRF
     - Tested in version: 4.2
     - Fixed in version: 4.8.3
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: https://github.com/LunchBox1/Week-7/blob/master/Host%20Header%20Injection%20in%20Password%20Reset.gif
   - [ ] Steps to recreate: 1) Click "Lost your password?" 2) In the username or email feild, enter "admin" 3) Using Burp Suite, find the password reset POST request and send it to the repeater. 4) In the repeater, change the "HOST:" form wpdistiller.vm to an alternative email. 5) Resend the POST request.
   - [ ] Affected source code: none
     
